@@ -8,7 +8,7 @@ export class AppController {
   constructor(private readonly prisma: PrismaService) {}
 
   @Get()
-  getHello() {
+  getNotifications() {
     return this.prisma.notification.findMany();
   }
 
